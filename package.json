@@ -1,0 +1,33 @@
+{
+  "name": "@snowfoxlab/mock-login-api",
+  "version": "1.0.1",
+  "description": "A simple mock login helper for frontend developers — generate fake tokens, roles, and user data for testing.",
+  "main": "index.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/snowfoxlab/mock-login-api"
+  },
+  "bugs": {
+    "url": "https://github.com/snowfoxlab/mock-login-api/issues"
+  },
+  "homepage": "https://github.com/snowfoxlab/mock-login-api#readme",
+  "keywords": [
+    "mock",
+    "login",
+    "auth",
+    "frontend",
+    "testing",
+    "fake",
+    "jwt"
+  ],
+  "author": "Snowfoxlab <snowfoxlab@gmail.com>",
+  "contributors": [
+    {
+      "name": "Bikash Adhikari",
+      "email": "adhikaribikash582@gmail.com",
+      "url": "https://github.com/bikashadhikari07"
+    }
+  ],
+  "license": "MIT"
+}
