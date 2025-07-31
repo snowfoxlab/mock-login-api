@@ -29,5 +29,8 @@
       "url": "https://github.com/bikashadhikari07"
     }
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "node-localstorage": "^3.0.5"
+  }
 }

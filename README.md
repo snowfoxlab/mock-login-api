@@ -7,7 +7,7 @@ Perfect for React, Next.js, Expo, or any modern web app.
 ## Installation
 
 ```bash
-npm install mock-login-api
+npm install @snowfoxlab/mock-login-api
 ```
 
 ### Local Development
