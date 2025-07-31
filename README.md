@@ -4,6 +4,13 @@ A simple mock login helper for frontend developers. Generate fake JWT tokens, us
 
 Perfect for React, Next.js, Expo, or any modern web app.
 
+## Live Demo
+
+Try the demo page here:  
+[https://snowfoxlab.github.io/mock-login-api/test.html](https://snowfoxlab.github.io/mock-login-api/test.html)
+
+---
+
 ## Installation
 
 ```bash
@@ -27,7 +34,7 @@ npm link mock-login-api
 ## Quick Start
 
 ```javascript
-import { login, getUser, logout } from "mock-login-api";
+import { login, getUser, logout, getToken, clear } from "mock-login-api";
 
 // Log in a mock user
 const user = login({
@@ -37,10 +44,16 @@ const user = login({
 });
 
 console.log("✅ Logged in:", user);
-// Output: { token: 'mock-jwt-token-...', username: 'boss', role: 'admin', email: 'boss@example.com' }
+// Output: { token: 'mock-abc123.1680204512345', username: 'boss', role: 'admin', email: 'boss@example.com' }
 
 // Get current user
 console.log("👤 Current user:", getUser());
+
+// Get current token only
+console.log("🔑 Token:", getToken());
+
+// Clear all stored user data
+clear();
 
 // Logout
 logout();
@@ -49,11 +62,13 @@ console.log("🔒 After logout:", getUser()); // null
 
 ## API Reference
 
-| Function                           | Description               | Returns                            |
-| ---------------------------------- | ------------------------- | ---------------------------------- |
-| `login({ username, role, email })` | Log in a mock user        | `{ token, username, role, email }` |
-| `getUser()`                        | Get the current mock user | User object or `null`              |
-| `logout()`                         | Clear the mock user data  | `void`                             |
+| Function                           | Description                | Returns                            |
+| ---------------------------------- | -------------------------- | ---------------------------------- |
+| `login({ username, role, email })` | Log in a mock user         | `{ token, username, role, email }` |
+| `getToken()                        | Get current mock JWT token | Token string or `null`             |
+| `getUser()`                        | Get the current mock user  | User object or `null`              |
+| `logout()`                         | Clear the mock user data   | `void`                             |
+| `clear()`                          | Clear all storage          | `logout `                          |
 
 ## React Example
 
@@ -115,6 +130,8 @@ export default function App() {
 - 🪶 **Lightweight** — Zero dependencies
 - 🧩 **Framework Agnostic** — Works with any JavaScript framework
 - 🎯 **TypeScript Ready** — Full type support included
+- ✨ **New** — Clear function & date-based token generation
+- ❄️ **New** — Live demo page with snowfall effect and UI
 
 ## Contributing
 
@@ -126,7 +143,19 @@ For major changes, please open an issue first to discuss what you would like to 
 
 MIT © [Snowfoxlab](https://github.com/snowfoxlab)
 
-## Author
+## Contributors
 
-**[Bikash Adhikari](https://github.com/bikashadhikari07/)**  
-Published under [Snowfoxlab](https://github.com/snowfoxlab)
+### Bikash Adhikari
+
+[![GitHub](https://img.shields.io/badge/-GitHub-000?style=flat-square&logo=github&logoColor=white)](https://github.com/bikashadhikari07)  
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/itsmebikash/)
+
+Lead Developer & Maintainer of this project. Passionate about open-source and building developer tools.
+
+---
+
+### Snowfoxlab Team
+
+[![GitHub](https://img.shields.io/badge/-GitHub-00aaff?style=flat-square&logo=github&logoColor=white)](https://github.com/snowfoxlab)
+
+Organization supporting this project and its ecosystem.
